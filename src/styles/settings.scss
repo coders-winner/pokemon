@@ -1,0 +1,23 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+.my-logo {
+  font-family: "Bungee Spice", sans-serif;
+  font-size: 38px;
+  text-decoration: none;
+}
+
+.my-cont {
+  max-width: 1200px;
+}
+.my-h1 {
+  margin: 20px 20px;
+}
