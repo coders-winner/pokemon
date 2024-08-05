@@ -43,7 +43,7 @@
           </v-list-item>
         </v-list>
       </div>
-      <v-table theme="dark">
+      <v-table>
         <thead>
           <tr>
             <th class="text-left">stat</th>
@@ -57,13 +57,13 @@
           </tr>
         </tbody>
       </v-table>
-
-      <!-- <v-card-subtitle> {{ route }} </v-card-subtitle> -->
     </v-card>
-    <h1 class="text-center">Evolution</h1>
-    <div v-if="evolution" class="d-flex flex-wrap justify-center">
-      <div v-for="item in evolution" :key="item.name">
-        <cartPokemon :item="item" />
+    <div v-if="pokemon">
+      <h1 class="text-center">Evolution</h1>
+      <div v-if="evolution" class="d-flex flex-wrap justify-center">
+        <div v-for="item in evolution" :key="item.name">
+          <cartPokemon :item="item" />
+        </div>
       </div>
     </div>
   </v-container>

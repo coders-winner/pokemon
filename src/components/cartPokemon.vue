@@ -17,8 +17,6 @@
 
     <v-card-title> {{ props.item.name }} </v-card-title>
 
-    <!-- <v-card-subtitle> {{ props.item }} </v-card-subtitle> -->
-
     <v-card-actions>
       <v-btn
         :to="`/pokemon/` + pokemon.id"
@@ -72,10 +70,8 @@ axios
   .get(props.item.url)
   .then(function (response) {
     pokemon.value = response.data;
-    // console.log(response.data);
   })
   .catch(function (error) {
-    // handle error
     console.log(error);
   });
 </script>

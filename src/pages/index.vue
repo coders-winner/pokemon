@@ -18,8 +18,10 @@
 
 <script setup lang="ts">
 import axios from "axios";
+import { useStore } from "@/stores/app";
+const store = useStore();
+
 const pokemons: any = ref();
-// const page = ref(1);
 
 function api() {
   axios
@@ -32,10 +34,6 @@ function api() {
       console.log(error);
     });
 }
-
-import { useStore } from "@/stores/app";
-
-const store = useStore();
 
 const page: any = computed({
   get() {
